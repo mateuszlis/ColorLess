@@ -118,6 +118,8 @@ main(argc, argv)
 	init_cmdhist();
 	init_option();
 	init_search();
+    char* color_args[] = { "color", "syslog" };
+    color_init(2, color_args);
 
 	/*
 	 * If the name of the executable program is "more",

@@ -1066,6 +1066,7 @@ pdone(endline, forw)
 		attr[curr++] = AT_NORMAL;
 	}
 	linebuf[curr] = '\0';
+    color_colorize(linebuf, linebuf, 1000);
 	attr[curr] = AT_NORMAL;
 }
 
